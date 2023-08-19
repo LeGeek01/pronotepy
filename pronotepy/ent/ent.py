@@ -14,36 +14,7 @@ from .generic_func import (  # type: ignore
 
 """CAS"""
 
-ac_clermont_ferrand = partial(
-    _cas,
-    url="https://cas.ent.auvergnerhonealpes.fr/login?selection=CLERMONT-ATS_parent_eleve",
-)
-
-ac_grenoble = partial(
-    _cas,
-    url="https://cas.ent.auvergnerhonealpes.fr/login?selection=GRE-ATS_parent_eleve",
-)
-
-ac_lyon = partial(
-    _cas,
-    url="https://cas.ent.auvergnerhonealpes.fr/login?selection=LYON-ATS_parent_eleve",
-)
-
-cas_arsene76 = partial(
-    _cas, url="https://cas.arsene76.fr/login?selection=ATS_parent_eleve"
-)
-
-cas_cybercolleges42 = partial(
-    _cas, url="https://cas.cybercolleges42.fr/login?selection=ATS_parent_eleve"
-)
-
-cas_ent27 = partial(_cas, url="https://cas.ent27.fr/login?selection=ATS_parent_eleve")
-
 cas_kosmos = partial(_cas, url="https://cas.kosmoseducation.com/login")
-
-ecollege_haute_garonne = partial(
-    _cas, url="https://cas.ecollege.haute-garonne.fr/login?selection=ATS_parent_eleve"
-)
 
 ent_creuse = partial(_cas, url="https://cas.entcreuse.fr/login")
 
